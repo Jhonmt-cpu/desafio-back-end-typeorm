@@ -50,13 +50,13 @@ transactionsRouter.post(
   '/import',
   upload.single('transactions'),
   async (request, response) => {
-    const importTransactions = new ImportTransactionsService();
+    /* const importTransactions = new ImportTransactionsService();
 
     const transactions = await importTransactions.execute({
       cVSFileName: request.file.filename,
     });
 
-    return response.json(transactions);
+    return response.json(transactions); */
   },
 );
 
